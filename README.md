@@ -1,9 +1,9 @@
 # Requirements
- - mkosi
-   - e.g. `dnf install mkosi`
+ - mkosi : version 12
+   - If you just use `sudo apt install mkosi` in a ubuntu server, it will give you version 5 or 3+17. Therefore you should go to the github of mkosi(https://github.com/systemd/mkosi) and install it manually.
  - `qemu-system-x86_64`
- - nopasswd sudo preferred, or run as root, or enter passwords into the prompt
- several times
+   - Install the QEMU that supports cxl(https://gitlab.com/bwidawsk/qemu), I have used the branch 'cxl-2.0v4'.
+ - nopasswd sudo preferred, or run as root, or enter passwords into the prompt several times
  - `argbash` to generate the argument parser lib (using `parser_generator.m4`)
 
 # Installation
